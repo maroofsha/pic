@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="main primary white post" >
+   <div class="content">
+            <h2 style="line-height: 2">Blog</h2>
+
+            <table  class="list" width="100%">
+             {% for post in site.posts %}
+               
+                <tr>
+                <td class="list-image" align="left" valign="top"><img width="100%" src="/images/{{post.image}}" alt="{{post.title}}"></td>
+                <td class="list-desc" align="left" valign="top">{{post.content | strip_html | truncate: 160 }} <a href="{{site.baseurl}}{{post.url}}">Read More</a></td>
+                </tr>
+                
+              {% endfor %}
+            </table>
+
+    </div>
+</section>

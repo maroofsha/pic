@@ -1,0 +1,38 @@
+.post {
+    margin: 50px auto;
+    max-width: 800px;
+    time {
+        font-size: 17px;
+        color: #aaa;
+    }
+}
+
+.white {
+    background: #fff;
+}
+
+.cover {
+    height: 360px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+table.list {
+    border-collapse: separate; 
+    border-spacing: 0px 30px;
+    
+    td {
+        @include media-query($on-palm) {
+            display: inline-block;
+        }
+    }
+}
+
+.list-desc {
+    vertical-align: top !important;
+    padding: 0 15px;
+}
+
+

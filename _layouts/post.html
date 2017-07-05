@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+
+
+<section class="main primary post white">
+    <div class="content">
+        <h2 class="text-center" style="line-height: 1">{{page.title}}</h2>
+        <time>{{ page.date | date: '%B %d, %Y' }}</time>
+        <img src="{{site.baseurl}}/images/{{page.image}}" width="100%" alt="{{post.title}}">
+        {{content}}
+    </div>
+</section>
