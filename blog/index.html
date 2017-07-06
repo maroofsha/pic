@@ -8,7 +8,7 @@ title: Blog
             <h2 style="line-height: 2">Blog</h2>
 
             <table  class="list" width="100%">
-             {% for post in site.posts %}
+          {% for post in paginator.posts %}
                
                 <tr>
                 <td class="list-image" align="left" valign="top"><img width="100%" src="{{site.baseurl}}/images/{{post.image}}" alt="{{post.title}}"></td>
@@ -17,6 +17,6 @@ title: Blog
                 
               {% endfor %}
             </table>
-
+            {% include pagination.html %}
     </div>
 </section>

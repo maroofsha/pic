@@ -60,5 +60,8 @@ article.from-left {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    position: center center;
+    background-position: center center;
+    @include media-query($on-palm) {
+        height: 250px;
+    }
 }
