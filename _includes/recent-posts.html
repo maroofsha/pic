@@ -12,10 +12,11 @@
 						{% for post in site.posts limit: 6 %}
 							<article class="from-left">
 								<a href="{{site.baseurl}}{{post.url}}" target="_blank" class="image fit" style="cursor: pointer; outline: 0px;"><img src="{{site.baseurl}}/images/{{post.image}}" width="100%" height="360" alt="{{post.title}}"></a>
+								<h4 class="post-title">{{post.title}}</h4>
 							</article>
 						{% endfor %}
-
+            
 						</div>
-
+                            <a href="{{site.baseurl}}/blog/"><button class="btn btn-primary">VIsit Blog</button></a>
 				</div>
 			</section>

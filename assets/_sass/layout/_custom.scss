@@ -23,7 +23,15 @@ table.list {
     border-collapse: separate; 
     border-spacing: 0px 30px;
     
+    .list-image {
+        width: 40%;
+        @include media-query($on-palm) {
+            width: 100%;
+        }
+    }
+    
     td {
+        
         @include media-query($on-palm) {
             display: inline-block;
         }
@@ -31,8 +39,26 @@ table.list {
 }
 
 .list-desc {
-    vertical-align: top !important;
+        vertical-align: middle !important;
     padding: 0 15px;
 }
 
+.gallery article .image {
+    padding: 10px;
+}
 
+article.from-left {
+/*     position: relative; */
+    text-align: center;
+}
+.post-title {
+    z-index: 999;
+}
+
+.post-header {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center center;
+}
