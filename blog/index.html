@@ -12,7 +12,7 @@ title: Blog
                
                 <tr>
                 <td class="list-image" align="left" valign="top"><img width="100%" src="{{site.baseurl}}/images/{{post.image}}" alt="{{post.title}}"></td>
-                <td class="list-desc" align="left" valign="top">{{post.content | strip_html | truncate: 220 }} <a href="{{site.baseurl}}{{post.url}}">Read More</a></td>
+                <td class="list-desc" align="left" valign="top">{{post.content | strip_html | truncate: 280 }} <a href="{{site.baseurl}}{{post.url}}">Read More</a></td>
                 </tr>
                 
               {% endfor %}

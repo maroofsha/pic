@@ -24,16 +24,16 @@ table.list {
     border-spacing: 0px 30px;
     
     .list-image {
-        width: 40%;
+        width: 50%;
     
          @include media-query($on-palm) {
             width: 100%;
         }
         
         img {
-            height: 200px;
+            height: 300px;
             @include media-query($on-palm) {
-                height: 250px;
+                height: auto;
         }
         }
     }
