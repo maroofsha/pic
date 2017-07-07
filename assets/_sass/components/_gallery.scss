@@ -26,6 +26,11 @@
 			.image {
 				margin: 0;
 				display: block;
+                img {
+                @include media-query($on-palm) {
+                    height: auto !important;
+                }
+                }
 			}
 
 			@for $i from 1 through 23 {
