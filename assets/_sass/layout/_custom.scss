@@ -25,8 +25,16 @@ table.list {
     
     .list-image {
         width: 40%;
-        @include media-query($on-palm) {
+    
+         @include media-query($on-palm) {
             width: 100%;
+        }
+        
+        img {
+            height: 200px;
+            @include media-query($on-palm) {
+                height: 250px;
+        }
         }
     }
     
