@@ -1,0 +1,23 @@
+title: Maroofsha
+
+facebook:
+twitter:
+linkedin:
+instagram:
+
+permalink: /blog/:title/
+
+paginate: 5
+paginate_path: /blog/page:num/
+
+sass:
+    sass_dir: assets/_sass
+    style: compressed
+    
+simpleform-api: ca22e719b028e1e08f50e0992953f8df
+
+
+
+gems: 
+    - jekyll-paginate
+    

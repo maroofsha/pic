@@ -1,0 +1,22 @@
+	<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Our Journey</h2>
+						<p>From handmade natural soaps to laundry bars, come along as we journey through the chemistry &amp; artistry of soap making. We use organic herbs &amp; spices as additives &amp; soap colorants. We use both natural essential oils &amp; lab made fragrance oils to scent our soaps depending on the demand. We hope you love our natural &amp; handcrafted soap recipes &amp; enjoy trying them out sometime. Soap making is a part of MaroofSha. All our products are handcrafted with special care, with organic additives from local gardens.</p>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+						
+						{% for post in site.posts limit: 6 %}
+							<article class="from-left">
+								<a href="{{site.baseurl}}{{post.url}}" target="_blank" class="image fit" style="cursor: pointer; outline: 0px;"><img src="{{site.baseurl}}/images/{{post.image}}" width="100%" height="360" alt="{{post.title}}"></a>
+								<h4 class="post-title">{{post.title}}</h4>
+							</article>
+						{% endfor %}
+            
+						</div>
+                            <a href="{{site.baseurl}}/blog/"><button class="btn btn-primary">VIsit Blog</button></a>
+				</div>
+			</section>
